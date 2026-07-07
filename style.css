@@ -1,0 +1,86 @@
+/* ==========================
+   App Background
+========================== */
+
+.stApp{
+    background: #f4f7fb;
+}
+
+/* ==========================
+   Main Container
+========================== */
+
+.block-container{
+    background: white;
+    padding: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ==========================
+   Title
+========================== */
+
+h1{
+    text-align:center;
+    color:#1e293b;
+    font-size:42px !important;
+    font-weight:700;
+}
+
+/* ==========================
+   Subtitle
+========================== */
+
+h3{
+    text-align:center;
+    color:#64748b;
+}
+
+/* ==========================
+   File Uploader
+========================== */
+
+div[data-testid="stFileUploader"]{
+    border:2px dashed #2563eb;
+    border-radius:14px;
+    padding:20px;
+    background:#f8fbff;
+}
+
+/* ==========================
+   Select Box
+========================== */
+
+div[data-testid="stSelectbox"]{
+    margin-top:10px;
+}
+
+/* ==========================
+   Button
+========================== */
+
+div[data-testid="stButton"] button{
+    width:100%;
+    background:#2563eb;
+    color:white;
+    border-radius:12px;
+    height:52px;
+    font-size:18px;
+    font-weight:600;
+    border:none;
+}
+
+div[data-testid="stButton"] button:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Success / Info Messages
+========================== */
+
+div[data-testid="stAlert"]{
+    border-radius:12px;
+}
