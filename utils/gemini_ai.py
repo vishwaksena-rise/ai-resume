@@ -1,5 +1,6 @@
 from google import genai
 from dotenv import load_dotenv
+import streamlit as st
 import os
 import httpx
 import time
@@ -12,10 +13,10 @@ load_dotenv()
 # -----------------------------
 # Read API Key
 # -----------------------------
-api_key = os.getenv("GEMINI_API_KEY")
+api_key = st.secrets.get("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
 
 if not api_key:
-    raise ValueError("❌ GEMINI_API_KEY not found in .env file.")
+    raise ValueError("❌ GEMINI_API_KEY not found.")
 
 # -----------------------------
 # Create Gemini Client
